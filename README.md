@@ -1,4 +1,4 @@
-# C++ Project
+# Class Roster Project
 Project to showcase my understanding of C++. I used Xcode as my IDE.
 
 # Competencies
