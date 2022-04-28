@@ -1,4 +1,4 @@
-# wgu-class-roster
+# C++ Project
 Project to showcase my understanding of C++. I used Xcode as my IDE.
 
 # Competencies
@@ -31,7 +31,7 @@ Project to showcase my understanding of C++. I used Xcode as my IDE.
 
  - The graduate applies object-oriented programming concepts in order to create a basic application.
 
-# INTRODUCTION
+# Introduction
 
 
 Throughout your career in software development, you will develop and maintain new and existing applications. You will be expected to fix issues as well as add new enhancements or migrate existing applications to new platforms or different programming languages. As a software developer, your role will be to create a design of an application based on given business requirements. After the design is completed, you must implement the application based on the design document and provided requirements.
@@ -39,7 +39,7 @@ Throughout your career in software development, you will develop and maintain ne
 In this assessment, you will create a C++ application based on the scenario below. The skills you demonstrate in your completed application will be useful in responding to technical interview questions for future employment. This application may also be added to your portfolio to show to future employers.
 
 
-# SCENARIO
+# Scenario
 
 
 You are hired as a contractor to help a university migrate an existing student system to a new platform using C++ language. Since the application already exists, its requirements exist as well, and they are outlined in the next section. You are responsible for implementing the part of the system based on these requirements. A list of data is provided as part of these requirements. This part of the system is responsible for reading and manipulating the provided data.
@@ -56,11 +56,11 @@ B. Create a C++ project in your integrated development environment (IDE) with th
 
  - degree.h
 
-- student.h and student.cpp
+ - student.h and student.cpp
 
-- roster.h and roster.cpp
+ - roster.h and roster.cpp
 
-- main.cpp  
+ - main.cpp  
  
 C. Define an enumerated data type _DegreeProgram_ for the degree programs containing the data type values _SECURITY, NETWORK,_ and _SOFTWARE_.  
 
@@ -68,31 +68,31 @@ D. For the Student class, do the following:
 
 1. Create the class Student in the files student.h and student.cpp, which includes _each_ of the following variables:
 
-- student ID
+   - student ID
 
-- first name
+   - first name
 
-- last name
+   - last name
 
-- email address
+   - email address
 
-- age
+   - age
 
-- array of number of days to complete each course
+   - array of number of days to complete each course
 
-- degree program
+   - degree program
 
 2. Create _each_ of the following functions in the Student class:
 
-- an accessor (i.e., getter) for each instance variable from part D1
+   - an accessor (i.e., getter) for each instance variable from part D1
 
-b. a mutator (i.e., setter) for each instance variable from part D1
+   - a mutator (i.e., setter) for each instance variable from part D1
 
-c. All external access and changes to any instance variables of the Student class must be done using accessor and mutator functions.
+   - All external access and changes to any instance variables of the Student class must be done using accessor and mutator functions.
 
-d. constructor using _all_ of the input parameters provided in the table
+   - constructor using _all_ of the input parameters provided in the table
 
-e. print() to print specific student data  
+   - print() to print specific student data  
 
 E. Create a Roster class (roster.cpp) by doing the following:
 
@@ -100,25 +100,23 @@ E. Create a Roster class (roster.cpp) by doing the following:
 
 2. Create a student object for _each_ student in the data table and populate classRosterArray.
 
-a. Parse _each_ set of data identified in the “studentData Table.”
+   - Parse _each_ set of data identified in the “studentData Table.”
 
-b. Add _each_ student object to classRosterArray.
+   - Add _each_ student object to classRosterArray.
 
 3. Define the following functions:
 
-a. public void add(string studentID, string firstName, string lastName, string emailAddress, int age, int daysInCourse1, int daysInCourse2, int daysInCourse3, DegreeProgram degreeprogram)  that sets the instance variables from part D1 and updates the roster.
+   - public void add(string studentID, string firstName, string lastName, string emailAddress, int age, int daysInCourse1, int daysInCourse2, int daysInCourse3, DegreeProgram degreeprogram)  that sets the instance variables from part D1 and updates the roster.
 
-b. public void remove(string studentID)  that removes students from the roster by student ID. If the student ID does not exist, the function prints an error message indicating that the student was not found.
+   - public void remove(string studentID)  that removes students from the roster by student ID. If the student ID does not exist, the function prints an error message indicating that the student was not found.
 
-c. public void printAll() that prints a complete tab-separated list of student data in the provided format: A1 [tab] First Name: John [tab] Last Name: Smith [tab] Age: 20 [tab]daysInCourse: {35, 40, 55} Degree Program: Security. The printAll() function should loop through _all_ the students in classRosterArray and call the print() function for _each_ student.
+   - public void printAll() that prints a complete tab-separated list of student data in the provided format: A1 [tab] First Name: John [tab] Last Name: Smith [tab] Age: 20 [tab]daysInCourse: {35, 40, 55} Degree Program: Security. The printAll() function should loop through _all_ the students in classRosterArray and call the print() function for _each_ student.
 
-d. public void printAverageDaysInCourse(string studentID)  that correctly prints a student’s average number of days in the three courses. The student is identified by the studentID parameter.
+   - public void printAverageDaysInCourse(string studentID)  that correctly prints a student’s average number of days in the three courses. The student is identified by the studentID parameter.
 
-e. public void printInvalidEmails() that verifies student email addresses and displays all invalid email addresses to the user.  
+   - public void printInvalidEmails() that verifies student email addresses and displays all invalid email addresses to the user.
 
-_Note: A valid email should include an at sign ('@') and period ('.') and should not include a space (' ')._  
-
-f. public void printByDegreeProgram(DegreeProgram degreeProgram) that prints out student information for a degree program specified by an enumerated type.  
+   - public void printByDegreeProgram(DegreeProgram degreeProgram) that prints out student information for a degree program specified by an enumerated type.  
 
 F. Demonstrate the program’s required functionality by adding a main() function in main.cpp, which will contain the required function calls to achieve the following results:
 
